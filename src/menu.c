@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include "min.h"
 #include "max.h"
 #include "diff.h"
@@ -9,9 +8,9 @@ int main() {
 	int command;
 	int array[100];
 	int size = 0;
-	scanf_s("%d", &command);
+	scanf("%d", &command);
 	while (getchar() != '\n') {
-		scanf_s("%d", &array[size]);
+		scanf("%d", &array[size]);
 		size++;
 	}
 	switch (command) {
@@ -28,9 +27,8 @@ int main() {
 		printf("%d\n", sum(array, size));
 		break;
 	default:
-		printf("Данные некорректны\n");
+		printf("Р”Р°РЅРЅС‹Рµ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹\n");
 		break;
 	}
-	_getch();
 	return 0;
 }
